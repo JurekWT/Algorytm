@@ -1,5 +1,5 @@
 import math
-from sysconfig import get_path
+import subprocess
 
 import pandas as pd
 import heapq as hp
@@ -63,6 +63,13 @@ def set_end(x, y):
 def heur(g, current, end):
     heurs = g + math.sqrt((current[0] - end[0]) ** 2 + (current[1] - end[1]) ** 2)
     return heurs
+
+def new_grid():
+    subprocess.run(["map_generator.exe"])
+
+generate = input("Wygenerować nową siatkę? (tak/nie): ")
+if generate == "tak":
+    new_grid()
 
 
 grid = pd.read_csv('grid.txt', sep=' ', header=None)
