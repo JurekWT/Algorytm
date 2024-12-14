@@ -42,7 +42,7 @@ def draw(win, grid, path, start, end, open_list, closed_list, message=None):
                 color = BLUE
             elif closed_list and (row, col) in closed_list:
                 color = BLACK
-            elif open_list and (row, col) in [i[1] for i in open_list]:
+            elif open_list and (row, col) in [i[2] for i in open_list]:
                 color = GREY
             pygame.draw.rect(win, color, (col * SQUARE_SIZE, row * SQUARE_SIZE, SQUARE_SIZE, SQUARE_SIZE))
     for (row, col) in path:
@@ -72,9 +72,10 @@ def find_route(grid, start, end):
     came_from = {}
     g_value = {start: 0}
     f_value = {start: heur(g_value[start], start, end)}
-    hp.heappush(open_list, (0, start))
+    hp.heappush(open_list, (0, 0, start))
+    counter = 0
     while open_list:
-        _, current = hp.heappop(open_list)
+        _, _, current = hp.heappop(open_list)
 
         if current == end:
             route = []
@@ -97,7 +98,8 @@ def find_route(grid, start, end):
                 came_from[neighbor] = current
                 g_value[neighbor] = g_value[current] + 1
                 f_value[neighbor] = heur(g_value[neighbor], neighbor, end)
-                hp.heappush(open_list, (f_value[neighbor], neighbor))
+                counter += -1
+                hp.heappush(open_list, (f_value[neighbor], counter, neighbor))
         yield open_list, closed_list, came_from
 
     yield None, None, None
