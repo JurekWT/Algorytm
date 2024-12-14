@@ -19,7 +19,7 @@ RED = (255, 0, 0)
 GREY = (128, 128, 128)
 
 WIN = pygame.display.set_mode((WIDTH, HEIGHT))
-FONT = pygame.font.SysFont('Arial', 50)
+FONT = pygame.font.SysFont('Arial', 30)
 
 
 def draw_grid(win):
@@ -133,7 +133,7 @@ endLocation = set_end(0, 19)
 print(find_route(grid, startLocation, endLocation))
 path = find_route(grid, startLocation, endLocation)
 
-## Pętla gui
+## Pętla wizualizacji
 
 running = True
 path_generator = find_route(grid, startLocation, endLocation)
@@ -145,14 +145,14 @@ while running:
             running = False
             pygame.quit()
             sys.exit()
-        if pygame.mouse.get_pressed()[0]:  # Lewy klik
+        if pygame.mouse.get_pressed()[0]:  # Left mouse button
             pos = pygame.mouse.get_pos()
             row, col = get_clicked_pos(pos)
             startLocation = set_start(row, col)
             path_generator = find_route(grid, startLocation, endLocation)
             path = []
             message = None
-        if pygame.mouse.get_pressed()[2]:  # Prawy klik
+        if pygame.mouse.get_pressed()[2]:  # Right mouse button
             pos = pygame.mouse.get_pos()
             row, col = get_clicked_pos(pos)
             endLocation = set_end(row, col)
