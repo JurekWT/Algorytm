@@ -40,6 +40,8 @@ def find_route(grid, start, end):
                 counter += -1
                 hp.heappush(open_list, (f_value[neighbor], counter, neighbor))
 
+    return 0
+
 def get_neighbors(g, current):
     neighbors = []
     for dx, dy in [(-1, 0), (1, 0), (0, -1), (0, 1)]:
@@ -76,5 +78,7 @@ startLocation = set_start(19, 0)
 endLocation = set_end(0, 19)
 path = find_route(grid, startLocation, endLocation)
 
-for node in path:
-    print(node)
+if path != 0:
+    for node in path:
+        print(node)
+else: print('Nie można znaleźć ścieżki')
