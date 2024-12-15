@@ -67,6 +67,7 @@ def heur(g, current, end):
 
 def new_grid():
     subprocess.run(["map_generator.exe"])
+    print()
 
 generate = input("Wygenerować nową siatkę? (t/n): ")
 if generate == "t":

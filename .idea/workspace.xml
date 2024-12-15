@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50fa1c09-21c3-4cdb-82ef-49d0b9e8944a" name="Changes" comment="Możliwość generowania nowej siatki na start">
+    <list default="true" id="50fa1c09-21c3-4cdb-82ef-49d0b9e8944a" name="Changes" comment="obsługa braku ścieżki">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grid.txt" beforeDir="false" afterPath="$PROJECT_DIR$/grid.txt" afterDir="false" />
     </list>
@@ -190,7 +190,8 @@
       <workItem from="1734201881504" duration="1699000" />
       <workItem from="1734203620366" duration="143000" />
       <workItem from="1734203851549" duration="146000" />
-      <workItem from="1734255389339" duration="650000" />
+      <workItem from="1734255389339" duration="1960000" />
+      <workItem from="1734258489793" duration="322000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -256,7 +257,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734203984033</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="obsługa braku ścieżki">
+      <option name="closed" value="true" />
+      <created>1734256554127</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1734256554127</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,7 +287,8 @@
     <MESSAGE value="lets goooooooo" />
     <MESSAGE value="Wszystko działa na tzw. essie" />
     <MESSAGE value="Możliwość generowania nowej siatki na start" />
-    <option name="LAST_COMMIT_MESSAGE" value="Możliwość generowania nowej siatki na start" />
+    <MESSAGE value="obsługa braku ścieżki" />
+    <option name="LAST_COMMIT_MESSAGE" value="obsługa braku ścieżki" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -293,9 +303,9 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Algorytm$xd2.coverage" NAME="xd2 Coverage Results" MODIFIED="1730053404551" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Algorytm$wizualizacja.coverage" NAME="wizualizacja Coverage Results" MODIFIED="1734256042272" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Algorytm$wizualizacja.coverage" NAME="wizualizacja Coverage Results" MODIFIED="1734256767739" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Algorytm$Python_Console.coverage" NAME="Python Console Coverage Results" MODIFIED="1734201969376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/Algorytm$konsolowa.coverage" NAME="konsolowa Coverage Results" MODIFIED="1734255408635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Algorytm$konsolowa.coverage" NAME="konsolowa Coverage Results" MODIFIED="1734256751905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Algorytm$main.coverage" NAME="wizualizacja Coverage Results" MODIFIED="1734203548947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
