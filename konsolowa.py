@@ -69,9 +69,9 @@ def new_grid():
     subprocess.run(["map_generator.exe"])
     print()
 
-generate = input("Wygenerować nową siatkę? (t/n): ")
-if generate == "t":
-    new_grid()
+# generate = input("Wygenerować nową siatkę? (t/n): ")
+# if generate == "t":
+#     new_grid()
 
 
 grid = pd.read_csv('grid.txt', sep=' ', header=None)
@@ -79,7 +79,11 @@ startLocation = set_start(19, 0)
 endLocation = set_end(0, 19)
 path = find_route(grid, startLocation, endLocation)
 
+grid = grid.astype(str)
+print(grid)
 if path != 0:
     for node in path:
-        print(node)
+        grid.at[node] = 'X'
+    print("Znaleziono ścieżkę!")
+    print(grid)
 else: print('Nie można znaleźć ścieżki')
