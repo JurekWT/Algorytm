@@ -87,4 +87,4 @@ if path != 0:
         grid.at[node] = '*'
     print("Znaleziono ścieżkę!")
     print(grid.to_string(header=False, index=False, col_space=2))
-else: print('Nie można znaleźć ścieżki')
+else: print('Nie można znaleźć ścieżki!')

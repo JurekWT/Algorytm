@@ -190,7 +190,7 @@
       <workItem from="1734255389339" duration="1960000" />
       <workItem from="1734258489793" duration="1205000" />
       <workItem from="1734262732756" duration="99000" />
-      <workItem from="1734449882766" duration="661000" />
+      <workItem from="1734449882766" duration="1014000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -280,7 +280,23 @@
       <option name="project" value="LOCAL" />
       <updated>1734450480844</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="drukowanie mapy przed i po znalezieniu ścieżki + obsługa braku ścieżki">
+      <option name="closed" value="true" />
+      <created>1734450816062</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1734450816062</updated>
+    </task>
+    <task id="LOCAL-00013" summary="drukowanie mapy przed i po znalezieniu ścieżki + obsługa braku ścieżki">
+      <option name="closed" value="true" />
+      <created>1734450895627</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1734450895627</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -321,7 +337,7 @@
     <SUITE FILE_PATH="coverage/Algorytm$xd2.coverage" NAME="xd2 Coverage Results" MODIFIED="1730053404551" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Algorytm$wizualizacja.coverage" NAME="wizualizacja Coverage Results" MODIFIED="1734262735484" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Algorytm$Python_Console.coverage" NAME="Python Console Coverage Results" MODIFIED="1734201969376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/Algorytm$konsolowa.coverage" NAME="konsolowa Coverage Results" MODIFIED="1734450800226" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Algorytm$konsolowa.coverage" NAME="konsolowa Coverage Results" MODIFIED="1734451072710" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Algorytm$main.coverage" NAME="wizualizacja Coverage Results" MODIFIED="1734203548947" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
