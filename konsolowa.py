@@ -80,6 +80,7 @@ endLocation = set_end(0, 19)
 path = find_route(grid, startLocation, endLocation)
 
 grid = grid.astype(str)
+print("Wczytano mapę:")
 print(grid.to_string(header=False, index=False, col_space=2))
 if path != 0:
     for node in path:
