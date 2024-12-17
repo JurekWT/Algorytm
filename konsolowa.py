@@ -80,10 +80,10 @@ endLocation = set_end(0, 19)
 path = find_route(grid, startLocation, endLocation)
 
 grid = grid.astype(str)
-print(grid)
+print(grid.to_string(header=False, index=False, col_space=2))
 if path != 0:
     for node in path:
-        grid.at[node] = 'X'
+        grid.at[node] = '*'
     print("Znaleziono ścieżkę!")
-    print(grid)
+    print(grid.to_string(header=False, index=False, col_space=2))
 else: print('Nie można znaleźć ścieżki')
