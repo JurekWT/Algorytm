@@ -28,15 +28,13 @@ def algorithm(grid, start, end, win, cell_size):
         current = open_list.pop(0)
         closed_list.append(current)
 
-        # Visualization
         draw_grid(win, grid, cell_size, open_list, closed_list, start, end)
 
         for direction in ('UP', 'DOWN', 'LEFT', 'RIGHT'):
             g_value = current.g_value + 1
-            counter += 1  # Increment counter
+            counter += -1
             neighbor_coord = get_neighbours(current.coord, direction)
 
-            # Check if the neighbor is within bounds and not a wall
             if not (0 <= neighbor_coord[0] < grid.shape[0] and 0 <= neighbor_coord[1] < grid.shape[1]):
                 continue
             if not check_wall(grid, neighbor_coord):
@@ -95,15 +93,12 @@ def draw_grid(win, grid, cell_size, open_list, closed_list, start, end):
                 color = (128, 128, 128)
             pygame.draw.rect(win, color, (j * cell_size, i * cell_size, cell_size, cell_size))
 
-    # Draw open list
     for node in open_list:
         pygame.draw.rect(win, (0, 255, 0), (node.coord[1] * cell_size, node.coord[0] * cell_size, cell_size, cell_size))
 
-    # Draw closed list
     for node in closed_list:
         pygame.draw.rect(win, (255, 0, 0), (node.coord[1] * cell_size, node.coord[0] * cell_size, cell_size, cell_size))
 
-    # Draw start and end
     pygame.draw.rect(win, (0, 0, 255), (start[1] * cell_size, start[0] * cell_size, cell_size, cell_size))  # Start
     pygame.draw.rect(win, (255, 255, 0), (end[1] * cell_size, end[0] * cell_size, cell_size, cell_size))  # End
 
@@ -119,7 +114,7 @@ def visualize(grid, start, end):
     win = pygame.display.set_mode((width, height))
     pygame.display.set_caption("A* Algorithm Visualization")
 
-    clock = pygame.time.Clock()  # Create the clock object to control the frame rate
+    clock = pygame.time.Clock()
     run = True
     path = None
     while run:
@@ -135,26 +130,22 @@ def visualize(grid, start, end):
                 elif event.button == 3:  # Right-click to set end
                     end = (grid_y, grid_x)
 
-                # Recalculate the path after setting start or end
                 path = algorithm(grid, start, end, win, cell_size)
 
-        # Draw grid and path
         draw_grid(win, grid, cell_size, [], [], start, end)
         if path:
             for coord in path:
                 pygame.draw.rect(win, (0, 255, 255), (coord[1] * cell_size, coord[0] * cell_size, cell_size, cell_size))
             pygame.display.update()
 
-        clock.tick(20)  # Control the frame rate (20 FPS in this case)
+        clock.tick(20)
 
     pygame.quit()
 
 
 if __name__ == "__main__":
-    # Load grid and set start/end points
     grid = pd.read_csv('grid.txt', sep=' ', header=None).values
     start = (19, 0)
     end = (0, 19)
 
-    # Visualize the result
     visualize(grid, start, end)
