@@ -178,4 +178,4 @@ while running:
         pass
 
     draw(WIN, grid, path, startLocation, endLocation, open_list, closed_list, message)
-    time.sleep(0.01)
+    time.sleep(0.1)
