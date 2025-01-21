@@ -64,14 +64,14 @@ def algorithm(grid, start, end, win, cell_size):
 def get_neighbours(coord, direction):
     x, y = coord
     if direction == 'UP':
-        y -= 1
+        x += -1
     elif direction == 'DOWN':
-        y += 1
+        x += +1
     elif direction == 'LEFT':
-        x -= 1
+        y += -1
     elif direction == 'RIGHT':
-        x += 1
-    return (x, y)
+        y += +1
+    return (x,y)
 
 
 def check_wall(grid, coord):

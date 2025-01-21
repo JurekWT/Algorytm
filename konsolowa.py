@@ -51,7 +51,13 @@ def get_neighbors(g, current):
     return neighbors
 
 
+def set_start(x,y):
+    start = (x,y)
+    return start
 
+def set_end(x,y):
+    end = (x,y)
+    return end
 
 
 def heur(g, current, end):
